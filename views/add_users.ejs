@@ -1,0 +1,41 @@
+<%- include("layout/header") %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 mx-auto mt-4">
+      <div class="card shadow">
+        <div class="card-header bg-danger">
+          <h1 class="text-light">Add New Trainer</h1>
+        </div>
+        <div class="card-body p-4">
+          <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+            <div class="mb-4">
+              <label for="name" class="mb-2">Name</label>
+              <input type="text" name="name" placeholder="Enter Your Name" required class="form-control form-control-lg">
+            </div>
+            <div class="mb-4">
+              <label for="Phone" class="mb-2">Phone</label>
+              <input type="text" name="Phone" placeholder="Enter Your Number" required class="form-control form-control-lg">
+            </div>
+            <div class="mb-4">
+              <label for="price" class="mb-2">Price</label>
+              <input type="number" name="price" required placeholder="Enter Your Price" class="form-control form-control-lg">
+            </div>
+            <div class="mb-4">
+              <label for="cv" class="mb-2">Cv</label>
+              <textarea type="text" name="cv" required placeholder="Enter Your Cv => Copy & Paste" class="form-control form-control-lg" rows="6"></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="image" class="mb-2">Select Image</label>
+              <input type="file" name="image" required class="form-control form-control-lg">
+            </div>
+            <div class="mb-3 d-grid">
+              <input type="submit" name="submit" value="add trainer" class="btn btn-danger btn-lg">
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<%- include("layout/footer") %>
