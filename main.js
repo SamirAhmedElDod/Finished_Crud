@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 //DataBase Connection    **>> {userNewParser: true } >> Falid
-mongoose.connect(process.env.DB_URL, {
+mongoose.connect("mongodb+srv://Hazem:admin_hazem_1@samirdb.h7xn0ax.mongodb.net/?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
